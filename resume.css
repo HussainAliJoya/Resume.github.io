@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #202f41;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #f1f5ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2563eb;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #111827;
+}
+
+.header p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-top: 5px;
+}
+
+.header p i {
+    color: #2563eb;
+}
+
+/* Section Titles */
+h2 {
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+h2 i {
+    color: #2563eb;
+    margin-right: 6px;
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 25px 0;
+}
+
+/* Paragraph */
+p {
+    font-size: 15px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* Skills Tags */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills li {
+    list-style: none;
+    background: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* Experience */
+.exp-box {
+    display: flex;
+    gap: 15px;
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.academy-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: #f1f5ff;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #374151;
+}
+
+/* Button */
+.download-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* PRINT (PDF) */
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .download-btn {
+        display: none;
+    }
+}
